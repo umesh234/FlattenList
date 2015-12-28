@@ -1,8 +1,16 @@
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 
+
+
+@AllArgsConstructor
+@EqualsAndHashCode
 public class Node {
 
-	int value;
-	Node prev;
-	Node next;
-	Node child;
+	@Getter @Setter int value;
+	@Getter @Setter Node prev;
+	@Getter @Setter Node next;
+	@Getter @Setter Node child;
 }
