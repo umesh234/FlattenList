@@ -11,7 +11,7 @@ public class ListFlatten {
 		
 		Node start = head;
 		Node end = Node.findEnd(head); 
-		while(start != end){
+		while(start != null){
 			
 			//if child exists append it to end of list
 			if(start.child != null) {
