@@ -12,10 +12,10 @@ public class ListFlatten {
 		Node start = head;
 		Node end = Node.findEnd(head); 
 		while(start != null){
-			
 			//if child exists append it to end of list
 			if(start.child != null) {
 				end.next = start.child;
+				start.child.prev = end;
 				start.child = null ; 
 				end = Node.findEnd(end);
 			}
